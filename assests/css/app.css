@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(240, 142, 142);
+}
+
+:root {
+  --bgcolor: #051923;
+  --maincolor: #780000;
+}
+#hero,
+#About-me,
+#Service,
+#Contact {
+  /* border: 1px solid orange; */
+  padding: 30px 0;
+  /* border: 1px solid red; */
+}
+.container {
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+.section-heading {
+  text-align: center;
+  font-size: 30px;
+}
+
+#hero .container {
+  /* border: 1px solid var(--maincolor); */
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgcolor);
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  overflow: hidden;
+}
+#hero .container .content {
+  /* border: 1px solid var(--maincolor); */
+  flex-basis: 60%;
+  text-align: center;
+  color: rgb(158, 86, 86);
+}
+#hero .container .content,
+h3,
+h1,
+p {
+  margin-bottom: 15px;
+}
+#hero .container .content .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#hero .container .img-div {
+  /* border: 1px solid var(--maincolor); */
+  flex-basis: 40%;
+  height: 100%;
+}
+
+#hero .container .img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 0%;
+}
+
+/* ABOUT section */
+#About-me .container {
+  display: flex;
+  /* color: white; */
+  /* border: 1px solid green; */
+}
+#About-me .container > div {
+  /* border: 1px solid orange; */
+  flex-basis: 50%;
+}
+
+#About-me .container .img-wrapper img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 2px 3px 10px black;
+  margin: auto;
+  display: flex;
+}
+
+/* #SKILL SECTION */
+#Skills .container {
+  display: flex;
+  /* margin-left: 250px; */
+  align-items: center;
+}
+#Skills .container > div {
+  flex-basis: 50%;
+  /* border: 1px solid red; */
+}
+
+#Skills .container .content .skill-list {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+#Skills .container .content .skill-list .skill-items {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 4px;
+  display: inline-block;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  font-weight: bold;
+  border-radius: 5px;
+  color: black;
+}
+
+#Skills .container .img-div img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+/* Service Section */
+#Service .container {
+  display: flex;
+  gap: 30px;
+}
+
+#Service .container > div {
+  /* border: 1px solid green; */
+  flex-basis: 33.3%;
+}
+#Service .container .card-wrapper .card {
+  /* border: 1px solid orange; */
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #0f0326;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+#Service .container .card-wrapper .card:hover {
+  transform: scale(1.05);
+  background-color: #e56399;
+  color: #00ffea;
+}
+
+#Service .container .card-wrapper .card svg,
+h3,
+p {
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#Contact .container {
+  display: flex;
+}
+
+#Contact .container > div {
+  border: 1px solid orange;
+  flex-basis: 50%;
+}
+
+#Contact .container .content .contact-list {
+  list-style-type: none;
+}
+
+#Contact .contact-list-items {
+  margin: 15px 0;
+  align-items: center;
+}
