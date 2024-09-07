@@ -297,5 +297,126 @@ display: flex;
 
 #Footer .social-icons {
   gap: 15px;
+}/* Contact Section */
+#Contact .container {
+  display: flex;
+}
+
+#Contact .container > div {
+  /* border: 1px solid orange; */
+  flex-basis: 50%;
+}
+
+#Contact .container .content .contact-list {
+  list-style-type: none;
+  gap: 5px;
+}
+
+#Contact .contact-list-items {
+  margin: 15px 0;
+  align-items: center;
+  gap: 10px;
+}
+
+#Contact .contact-list-items span {
+  color: #240046;
+}
+
+#Contact .mb-3 {
+  margin-bottom: 10px;
+}
+
+#Contact .mb-3:first-child {
+  display: flex;
+}
+#Contact .input {
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100%;
+  backdrop-filter: blur(40px);
+  background-color: var(--bgcolor);
+  color: white;
+}
+#Contact .input-1 {
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100%;
+  margin-right: 10px;
+  backdrop-filter: blur(40px);
+  background-color: var(--bgcolor);
+  color: white;
+}
+#Contact .textarea {
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100%;
+  margin-right: 10px;
+  background-color: #219ebc;
+  color: rgb(0, 0, 0);
+}
+
+#Contact .btn {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fb00004f;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: flex;
+  cursor: pointer;
+  margin: auto;
+  transition: transform 0.3s ease, background-color 0.5s ease;
+  color: #f72585;
+  font-weight: bold;
+}
+
+#Contact .btn:hover {
+  background-color: rgba(0, 255, 0, 0.651);
+  transform: scale(1.15);
+}
+
+/* #footer Section */
+#Footer {
+  background-color: #333d29;
+  color: white;
+  padding: 30px;
+}
+#Footer .container {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+#Footer .container p {
+  color: #5a189a;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#Footer .container > div {
+  flex-basis: 33.33%;
+  text-align: center;
+  /* border: 1px solid rebeccapurple; */
+  color: #e4c1f9;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#Footer .link-list {
+  list-style-type: none;
+}
+#Footer .link-list-items {
+  margin: 22px;
+}
+
+#Footer .link-list-items a {
+  text-decoration: none;
+  color: #a9def9;
+}
+
+#Footer .social-icons {
+  gap: 15px;
 }
 
